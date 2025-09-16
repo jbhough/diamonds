@@ -1,0 +1,28 @@
+---
+title: "My First Quarto Document"
+author: "Your Name"
+date: "September 16, 2025"
+format: html
+---
+
+## Introduction
+
+This is an example of a Quarto document using R. Quarto allows you to weave together narrative text and executable code to create professional-looking reports.
+
+## Running R Code
+
+You can embed R code directly into your document using code chunks. The output of the code will be included in the rendered document.
+
+```{r}
+library(ggplot2)
+ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) +
+  geom_point(alpha = 0.5) +
+  labs(
+    title = "Diamond Price vs. Carat by Cut",
+    x = "Carat (Weight)",
+    y = "Price (USD)"
+  ) +
+  theme_minimal()
+```
+
+Updated at `r Sys.time()`.
